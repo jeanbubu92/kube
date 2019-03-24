@@ -5,6 +5,7 @@ http.createServer(function (req, res) {
   const options = {
     host: url,
     port: 8080,
+	family: 4,
     path: '/',
     method: 'GET'
   };

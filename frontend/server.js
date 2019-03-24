@@ -1,11 +1,9 @@
 var http = require('http');
-const url = process.env.BACKEND ? process.env.BACKEND : 'http://localhost'
+const url = process.env.BACKEND ? process.env.BACKEND : 'localhost:8080'
 
 http.createServer(function (req, res) {
   const options = {
     host: url,
-    port: 8080,
-	family: 4,
     path: '/',
     method: 'GET'
   };
